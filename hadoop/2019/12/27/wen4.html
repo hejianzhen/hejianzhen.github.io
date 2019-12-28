@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="/public/JS/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/public/JS/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/public/JS/jquery.min.js"></script>
+    <link rel="stylesheet" href="/public/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/public/index1.css">
+    <title>在读文章</title>
+
+    <!--  -->
+<!--  -->
+    <style>
+    .container-fluid{
+        margin: 0;
+        padding: 0;
+    }
+    
+    </style>
+    <style type="text/css">
+        body.custom-background {
+            background-image:url('/public/images/121 (2).jpg');
+            background-size:100% 100%;
+            background-repeat:no-repeat;
+            background-position:top left;
+            background-attachment:fixed;
+        }
+        </style>
+        <style>
+            /* 3、文章部分里面的每个div */    
+            .wenzhang-w{
+                width: 96%;
+                height: auto;
+                margin-left:4%;
+                margin-top: -10px;
+                padding: 0;
+                border-radius: 10px;
+                background: url(/public/images/touxiangbeijingtu.png) no-repeat;
+                 background-size: 100% 100%;
+                /* background-color:rgb(0, 10, 14); */
+                /* opacity: 0.5; */
+                /* box-shadow: 2px 2px 20px 1px rgb(247,232,142); */
+                /* margin: 5px; */
+                /* bottom: 5px; */
+                /* position: absolute; */  
+                /* border: 1px solid rgb(92, 164, 231); */
+            }
+            .dev-1-w{
+                /* background: rgb(195, 227, 248); */
+                border-radius: 10px;   
+            }
+            .dev-1-w li{
+                display: inline-block;
+                margin-left: 40px;
+            }
+            .dev-1-w li a{
+                /* background: rgb(17, 17, 17); */
+                border-radius: 50%;
+            }
+            .dev-1-w li span{
+                /* background: white; */
+               color: rgb(3, 3, 3);
+            }
+            .wenzhang-w-w{
+                width:100%;
+                height: auto;
+                text-indent: 2em;
+                margin-top: -50px;
+                /* text-align: center; */
+                line-height: 160%;
+                font-size: 15px;
+                color: rgb(15, 15, 15);
+                padding: 20px;
+                font-weight: 30px;
+                font-size: 20px;
+            }
+            .wz-w-biaoti{
+                background: url(/public/images/dongtu5.jpg) no-repeat;
+                background-size: 100% 100%;
+                height: 200px;
+            }
+            </style>
+                    <!-- 第二页 -->
+        <script type="text/javascript" src="/public/all.js"></script>
+</head>
+<body class="custom-background">
+   
+   
+    <!-- 导航条 -->
+    <div class="container-fluid">
+        <div class="row beijing"> <!--第一行 -->
+            <div class="col-md-4 col-xs-1 beijing1">
+                
+                <div class="h">
+                    <div>
+                        <p class="geqian">个性签名：</p>
+                    </div>
+                    
+                    <p class="geqian1">总之岁月漫长，然而值得等待~</p>
+                    
+                </div>
+            </div> <!-- 1-5格 -->
+            <div class="col-md-1 col-xs-1 beijing1">
+                <img src="/public/images/122.jpg" alt="" class="img1">
+            </div>
+            <div class="col-md-1 col-xs-1 beijing1">
+                <div class="bianqian1">
+                    <img src="/public/images/paipai.png" style="display:none" id="paipai">
+                    <a style="cursor: pointer;" href="/index.html">首页</a>
+                </div>
+            </div><!-- 2 -->
+
+            
+
+            <div class="col-md-1 col-xs-1 beijing1">
+                <div class="bianqian1"><a style="cursor: pointer;" href="/about.html">分类</a style="cursor: pointer;"></div>
+            </div><!-- 4 -->
+
+            <div class="col-md-1 col-xs-1 beijing1">
+                <div class="bianqian1"><a style="cursor: pointer;">留言</a style="cursor: pointer;"></div>
+            </div><!-- 5 -->
+            <div class="col-md-1 col-xs-1 beijing1">
+                <div class="bianqian1"><a style="cursor: pointer;">相册</a style="cursor: pointer;"></div>
+            </div><!-- 6 -->
+            <div class="col-md-1 col-xs-1 beijing1">
+                <div class="bianqian1"><a style="cursor: pointer;">友链</a style="cursor: pointer;"></div>
+            </div><!-- 3 -->
+            <div class="col-md-1 col-xs-1 beijing1"></div><!-- 7 -->
+            <div class="col-md-1 col-xs-1 beijing1"></div><!-- 8 -->
+        
+        </div>
+        <div class="row">
+            <div class="xiantiao"></div>
+        </div>     
+    <!-- 导航条 -->
+    <!-- 中间部分 -->
+            <div class="row"><!--第二行 -->
+                <div class="yincang">
+                    <div class="col-md-2">
+                        <div class="box-wrap">
+                            <div class="wenzi">tips</div>
+                            <div class="main">
+                                <div class="nav">
+                                   <div class="a">
+                                    <a href="#">
+                                    <span class="span" id="bg1">CSS</span>
+                                    </a>
+                                   </div>
+                                </div>
+                                <div class="nav">
+                                   <div class="a">
+                                    <a href="#">
+                                    <span class="span" id="bg2">HTML</span>
+                                    </a>
+                                   </div>
+                                </div>
+                                <div class="nav">
+                                   <div class="a">
+                                    <a href="#">
+                                    <span class="span" id="bg3">Jquery</span>
+                                    </a>    
+                                   </div>
+                                </div>
+                                <div class="nav">
+                                   <div class="a">
+                                    <a href="#">
+                                    <span class="span" id="bg4">Javascript</span>
+                                    </a>
+                                   </div>
+                                </div>
+                                
+                                <div class="nav">
+                                   <div class="a">
+                                    <a href="#">
+                                    <span class="span" id="bg6">关于我</span>
+                                    </a>
+                                    </div>
+                                </div>
+                                </div>
+                        
+                        </div>
+                    </div>
+                        <!-- <div class="box7">
+                            我们都在改变，从简单到复杂，从单纯到圆滑;
+                            我们都想不变;<br>一直的善良着，永远的耿直着。
+                        </div> -->
+                    <!-- 左 -->
+                    <div class="col-md-6">               
+                            <div class="row wzw-w">
+                                <div class="col-md-12 wenzhang-w">
+                                    <div class="wz-w">
+                                        <div class="wz-w-biaoti">
+                                            <div style="text-align: center;font-size: 30px;color: rgb(80, 77, 77);"><p>hadoop学习总结</p></div>
+                                            <ul class="dev-1-w" style="text-align: center;">
+                                                <li class="dev-2">
+                                                    <i class="iconfont"><a href=""><img src="/public/images/time.png" alt=""></a></i> 
+                                                    <span>2019/12/27</span>
+                                                </li> 
+                                                <li class="dev-2">
+                                                    <i class="iconfont"><a href=""><img src="/public/images/eye.png" alt=""></a></i> 
+                                                    <span>61</span>
+                                                </li> 
+    
+                                                <li class="dev-3">
+                                                    <i class="iconfont"><a href=""><img src="/public/images/book.png" alt=""></a></i> 
+                                                    <span>阅读量：4</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="wenzhang-w-w">
+                                            <!-- <div style="position: absolute;height: 400px;width: 500px;float: left;"> -->
+                                                <img src="/public/images/tupain6.jpg" alt="" style="float: left;margin: 10px;border-radius: 50%;">
+                                            
+                                            <!-- </div>   -->
+                                            
+                                           
+                                            <p>所学知识：理论课：1、	大数据的特点：大量性、多样性、易变性、准确性、复杂性</p>
+
+<p>2、	Hadoop和关系型数据库的另一个区别在于它们所操作的数据集的结构化程度。结构化数据是具有既定格式的实体化数据，如XML文档或满足特定预定义格式的数据库表。<!--more-->另一方面，半结构化数据比较松散，虽然可能有格式，但经常被忽略，所以它只能作为对数据结构的一般性指导。例如电子表格，它在结构上是由单元格组成的网格，但是每个单元格内可以保存任何形式的数据。非结构化数据没有什么特别的内部结构，例如纯文本或图像数据。Hadoop对非结构化或半结构化数据非常有效，因为它是在处理数据时才对数据进行解释(即所谓的“读时模式”)。这种模式在提供灵活性的同时避免了RDBMS数据加载阶段带来的高开销，因为在Hadoop中仅仅是一个文件拷贝操作。</p>
+
+<p>3、	关键技术：1）	数据分布在多台机器：复制到多个结点（可靠性、多个结点同时处理数据）2）	计算随数据走：网络IO速度远小于本地磁盘IO速度程序运行时，将程序以及依赖包复制到数据所在的机器上运行3）	串行IO取代随机IO：传输时间远小于寻道时间，一般数据写入后不再修改</p>
+
+<p>4、	Hadoop优点：高可靠性、高扩展性、高效性、高容错性</p>
+
+<p>5、	HDFS以流式数据访问模式来存储超大文件，一次写入多次读取。HDFS默认为128M</p>
+
+<p>6、	HDFS为甚么这么大：1）减少寻道时间2）减少管理块的数据开销3）减少网络连接成本</p>
+
+<p>7、	使用block数据块的好处1）文件可大于磁盘文件2）简化存储管理3）消除元数据的顾虑4）提高容错能力</p>
+
+<p>8、	Namenode 1）存储文件元数据metadatal，如文件名，文件目录结构、文件属性、生成时间、文件权限副本数，验收信息、文件块列表。映射信息。运行时数据存储到内存，HDFS可存储文件数受限于namenode。 2）作用管理文件数目录结构接受用户操作请求用来管理datanode 3）一个block对应一条记录。如果大量小文件会消耗大量内存，处理大量小文件，速度远远小于处理大文件速度数据会存储到磁盘。</p>
+
+<p>9、 在本地文件系统保存具体block数据以及校验码每个块对应一个block的映射信息。</p>
+
+<p>10、	datanode保存在各自结点的Linux文件系统中。</p>
+
+<p>11、	Datanode启动时会向namenode报告当前存储的数据块信息，后续也会定时报告修改信息</p>
+
+<p>12、	datanode保存数据的读写操作和复制操作。</p>
+
+<p>13、	通过namenode发送心跳保持联系，如果namenode十分钟，没有收到data心跳，则认为他死掉了，并将block信息复制到datanode。</p>
+
+<p>14、	Zookeer本身是分布式应用程序，为写入为布式应用程序提供服务。分布式应用的优点:可靠性、可扩展性、透明性15、	分布式用的挑式，竞争采件.死锁、不一致(原好写入方式)</p>
+
+<p>16、	zookeer 模式: Leader Follower. observe (版本3.3后那入)(同步的信息就是znode)leader: 为客户端系统提供读写服务Follower:提供读服务observe :提供读服务，不参与leader选举，也不参与 写操作的”过半写成策略”目的是在不影响写性能情况下集群的读性能。zookeeper 层顶命名空间:/config: 命名空间集中式配置管理，其命名空间下。每个Znode最多可存储1M的数据。版本号: version、cversion aversion操作控制序列表 ACL: creat. 创建节点叔限 read:获取子节数据加手节点列表的权限write:更新节点数据delete：删除子节点权限Admin:资置节点ACL的权限</p>
+
+<p>17、	Failover失败 .处理、任务失败1）运时得异常或JUM退出都会汇报给AppMaster 2）通过心跳来临查挂住的任务，会检查多次开(可配置)才判断该任务是否失败 3）一个任务的失败超过配置值则认为该作业失败4）失败的任务或作业都会有AppMastet重新运行</p>
+
+<p>19、AppMester失败1）AppM定时发法信系给RM，通常一比段时间后没接改到App? M心.跳，则认为它失败(也可通过配置修改认为多次后失败)2）一旦AppM失败 ，RM会启动一个新的AppM3）新的AppM负责恢复之前错误的AppM的状态。这一步是通过将应用的运行状态保存到共享存储上实现的。(RM不会负责任务状态的保存和恢复) 4）Client 也会定时向ApPM查询进度和状态，一旦发现失败。就像Rm询间新的ApPM</p>
+
+<p>20、node Manger (节点管理器)失败 1）. Nodem定时发进心 跳到RM如果一 定时间没有收到公 到长、信息，RM就会将其移除 2）.任务运行在该Nodemanger上的任务和Application Moster 都会在其他的nodem上进行快复。 3）.如果某个Nodemanger 失败次数太多AppM就会把他加入黑名单，任务调度时不会在这个节点上运行</p>
+
+<p>21、ResoureManger 1）. 通过checkpoint， 定时保存其状点到3磁盘,然后失败时重新运行。2）通过Zookeepr同步状实现透明的HA(高可用性)实验课：</p>
+
+<p>1、	ipconfig 查看本机ip</p>
+
+<p>2、	ifconfig 命令被用于配置和显示Linux内核中网络接口的网络参数。</p>
+
+<p>3、ip -a linux查网卡</p>
+
+<p>4、ping+虚拟机网址(ipconfig查)</p>
+
+<p>5、network服务器启动错误，后来通过重启虚拟机再次进入才可以</p>
+
+<p>6、sudo su进入root权限7、删除Linux原有jdk:rpm -e –nodeps jdk文件名</p>
+
+<p>8、进入路径:vi /etc/profile9、vi /etc/hosts 查看主机名</p>
+
+<p>10、 hostname hadoop0 临时修改主机名称</p>
+
+<p>11.tar -zxvf ./hadoop-2.7.7.tar.gz -C /usr/local 解压缩压缩包</p>
+
+<p>12、vi /etc/profile 更改配置文件</p>
+
+<p>13、 chown -R cyj:cyj /usr/local/hadoop-2.7.7/修改权限</p>
+
+<p>感想：</p>
+
+<p>开学刚拿到这本书时，被这本书的厚度吓到了，不知道在这么短的课时时间内，到底要怎么学这门课。但是后来老师上课的时候发现并没有这么难，发现老师是把总的思路和架构都给我们屡清楚了，但是想要深入学习的话，还是得靠自己课后的学习。老师只是一个引进门的过程，想要深入学习并且学好掌握，还是得靠自己。在实验课的过程中，包括最初的安装虚拟机、配置网络，再到后面的克隆虚拟机搭建hadoop集群。在这一些列的过程中都遇到了很多困难。比如在配置环境连通网络的时候，从早上8点配到网上才弄好。这其中出现了很多问题，又不断上网去查找解决问题的方案，其实当你遇到问题一直解决不了时，特别抓狂。但是又不能放弃，只能去尝试下一种方法，知道把问题解决。还有就是在倒数第二个实验的时候，压缩包一直拖不进去，也不知道是什么原因。大家都可以直接从电脑拖进去，但是我不行，特比热难受，后来又尝试用xshell还有其他服务器方法来做，也是尝试了很多次都不行，下了好多软件，最后终于放进去了，真的花了很长时间和精力，差点就放弃了。还有一些问题通过寻求老师和同学的帮助，也都解决了。很感谢帮助过我的同学，他们的细心和有耐心的讲解，让我学习到了很多知识。我自己以后也要提高自己解决问题的能力，还有要有耐心去解决问题，一定要坚持下去把问题解决了才有进步，不能遇到问题就想放弃。还有就是加强自主学习，更好的去提升自己。</p>
+ 
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </div>
+                            
+                            
+
+
+
+                    </div>
+                    
+                    <div class="col-md-3">
+                        
+                        <div class="xin">
+                            
+                                <div class="xinxi">
+                                <div class="touxiang1">
+                                    <div class="touxiang"></div>
+                                </div>
+                                <div class="xinxi1"><p>悠然-个人博客</p></div> 
+                                <div class="xinxi2"><p>不断努力的编程小白</p></div> 
+                                <div class="xinxi1">
+                                    
+                                    <div>
+                                        <div class="feed" id="feed1">
+                                            
+                                            <p><a href="http://www.htmleaf.com/"></a></p>
+                                            <div class="heart" id="like3" rel="like"></div>
+                                            <div class="likeCount" id="likeCount3">23</div>
+                                        </div> 
+                                        <div class="guanzhu" style="cursor: pointer;">
+                                            关注
+                                            <div class="yintu">
+                                                <img id="ti" src="/public/images/1577370220.png" style="display:none">
+                                            </div>
+                                        </div>
+                                        <div><img src="/public/images/gaunzhu.gif" alt="" style="width: 90px;height: 90px;float: right;margin-top: -90px;"></div>
+                                        
+                                    </div>
+   
+                                </div>
+                                
+                                <div class="xinxi3"><p>文章数量：7</p></div> 
+                                <div class="xinxi3"><p>我关注的：2</p></div>
+                                <div class="xinxi31"><p>运行天数：<span id="htmer_time"></span></p></div> <!-- 文字 --> 
+                                <div class="row yema">
+                                    <div class="shangyiye" id="sy1">
+                                        
+                                        <a href="javascript:void(0)" disabled><strong>《《《上一篇</strong></a>
+                                        
+                                    </div>
+                                    
+                                    <div class="shangyiye" id="sy2">
+                                        
+                                        <a href="/others/2019/12/27/wen3.html"><strong>下一篇》》》</strong></a>
+                                        
+                                    </div>
+                                </div> 
+                            </div>   
+                        </div>    
+                    </div>
+                    <div class="col-md-1"></div><!-- 右 -->
+                </div>
+            </div>
+    </div>
+    <!-- 中间部分 -->
+ <div class="snow-container">    
+</div>
+<script>
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second >= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second >= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second >= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second >= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second > 0) {
+            time[4] = second;
+        }
+        return time;
+    }
+</script>
+<script type="text/javascript" language="javascript">
+    function setTime() {
+        // 博客创建时间秒数，时间格式中，月比较特殊，是从0开始的，所以想要显示5月，得写4才行，如下
+        var create_time = Math.round(new Date(Date.UTC(2019, 11, 22, 0, 0, 0))
+                .getTime() / 1000);
+        // 当前时间秒数,增加时区的差异
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
+                + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
+                + '秒';
+        document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+    }
+    setInterval(setTime, 1000);
+</script>
+
+
+
+<script>
+$('.guanzhu').mouseenter(function(){
+    $('#ti').show();
+})
+$('.guanzhu').mouseout(function(){
+    $('#ti').hide();
+})
+
+</script>
+<script type="text/javascript" src="/public/index.js"></script>
+<!-- <script src="inedx.js"></script> -->
+<script>
+    $(document).ready(function() {
+    $('body').on("click",'.heart',function(){
+        var A=$(this).attr("id");
+        var B=A.split("like");
+        var messageID=B[1];
+        var C=parseInt($("#likeCount"+messageID).html());
+        var D=$(this).attr("rel");//如果为Like则执行动画
+        if(D =='like')
+        {      
+                $("#likeCount"+messageID).html(C+1);
+                $(this).addClass("heartAnimation").attr("rel","unlike");
+            $(this).css("background-position","right");
+                    //不加这句有bug，动画最后又会到了起点，点击后强制使图片停在最右边，
+        }
+        else
+        {
+                $("#likeCount"+messageID).html(C-1);
+                $(this).removeClass("heartAnimation").attr("rel","like");
+                $(this).css("background-position","left");
+                   //点击后强制使红心变黑，否则显示悬停状态的红色的心
+        }
+    });
+    });
+    
+    </script>
+</body>
+</html>

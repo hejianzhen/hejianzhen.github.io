@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="/public/JS/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/public/JS/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/public/JS/jquery.min.js"></script>
+    <link rel="stylesheet" href="/public/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/public/index1.css">
+    <title>在读文章</title>
+
+    <!--  -->
+<!--  -->
+    <style>
+    .container-fluid{
+        margin: 0;
+        padding: 0;
+    }
+    
+    </style>
+    <style type="text/css">
+        body.custom-background {
+            background-image:url('/public/images/121 (2).jpg');
+            background-size:100% 100%;
+            background-repeat:no-repeat;
+            background-position:top left;
+            background-attachment:fixed;
+        }
+        </style>
+        <style>
+            /* 3、文章部分里面的每个div */    
+            .wenzhang-w{
+                width: 96%;
+                height: auto;
+                margin-left:4%;
+                margin-top: -10px;
+                padding: 0;
+                border-radius: 10px;
+                background: url(/public/images/touxiangbeijingtu.png) no-repeat;
+                 background-size: 100% 100%;
+                /* background-color:rgb(0, 10, 14); */
+                /* opacity: 0.5; */
+                /* box-shadow: 2px 2px 20px 1px rgb(247,232,142); */
+                /* margin: 5px; */
+                /* bottom: 5px; */
+                /* position: absolute; */  
+                /* border: 1px solid rgb(92, 164, 231); */
+            }
+            .dev-1-w{
+                /* background: rgb(195, 227, 248); */
+                border-radius: 10px;   
+            }
+            .dev-1-w li{
+                display: inline-block;
+                margin-left: 40px;
+            }
+            .dev-1-w li a{
+                /* background: rgb(17, 17, 17); */
+                border-radius: 50%;
+            }
+            .dev-1-w li span{
+                /* background: white; */
+               color: rgb(3, 3, 3);
+            }
+            .wenzhang-w-w{
+                width:100%;
+                height: auto;
+                text-indent: 2em;
+                margin-top: -50px;
+                /* text-align: center; */
+                line-height: 160%;
+                font-size: 15px;
+                color: rgb(15, 15, 15);
+                padding: 20px;
+                font-weight: 30px;
+                font-size: 20px;
+            }
+            .wz-w-biaoti{
+                background: url(/public/images/dongtu5.jpg) no-repeat;
+                background-size: 100% 100%;
+                height: 200px;
+            }
+            </style>
+                    <!-- 第二页 -->
+        <script type="text/javascript" src="/public/all.js"></script>
+</head>
+<body class="custom-background">
+   
+   
+    <!-- 导航条 -->
+    <div class="container-fluid">
+        <div class="row beijing"> <!--第一行 -->
+            <div class="col-md-4 col-xs-1 beijing1">
+                
+                <div class="h">
+                    <div>
+                        <p class="geqian">个性签名：</p>
+                    </div>
+                    
+                    <p class="geqian1">总之岁月漫长，然而值得等待~</p>
+                    
+                </div>
+            </div> <!-- 1-5格 -->
+            <div class="col-md-1 col-xs-1 beijing1">
+                <img src="/public/images/122.jpg" alt="" class="img1">
+            </div>
+            <div class="col-md-1 col-xs-1 beijing1">
+                <div class="bianqian1">
+                    <img src="/public/images/paipai.png" style="display:none" id="paipai">
+                    <a style="cursor: pointer;" href="/index.html">首页</a>
+                </div>
+            </div><!-- 2 -->
+
+            
+
+            <div class="col-md-1 col-xs-1 beijing1">
+                <div class="bianqian1"><a style="cursor: pointer;" href="/about.html">分类</a style="cursor: pointer;"></div>
+            </div><!-- 4 -->
+
+            <div class="col-md-1 col-xs-1 beijing1">
+                <div class="bianqian1"><a style="cursor: pointer;">留言</a style="cursor: pointer;"></div>
+            </div><!-- 5 -->
+            <div class="col-md-1 col-xs-1 beijing1">
+                <div class="bianqian1"><a style="cursor: pointer;">相册</a style="cursor: pointer;"></div>
+            </div><!-- 6 -->
+            <div class="col-md-1 col-xs-1 beijing1">
+                <div class="bianqian1"><a style="cursor: pointer;">友链</a style="cursor: pointer;"></div>
+            </div><!-- 3 -->
+            <div class="col-md-1 col-xs-1 beijing1"></div><!-- 7 -->
+            <div class="col-md-1 col-xs-1 beijing1"></div><!-- 8 -->
+        
+        </div>
+        <div class="row">
+            <div class="xiantiao"></div>
+        </div>     
+    <!-- 导航条 -->
+    <!-- 中间部分 -->
+            <div class="row"><!--第二行 -->
+                <div class="yincang">
+                    <div class="col-md-2">
+                        <div class="box-wrap">
+                            <div class="wenzi">tips</div>
+                            <div class="main">
+                                <div class="nav">
+                                   <div class="a">
+                                    <a href="#">
+                                    <span class="span" id="bg1">CSS</span>
+                                    </a>
+                                   </div>
+                                </div>
+                                <div class="nav">
+                                   <div class="a">
+                                    <a href="#">
+                                    <span class="span" id="bg2">HTML</span>
+                                    </a>
+                                   </div>
+                                </div>
+                                <div class="nav">
+                                   <div class="a">
+                                    <a href="#">
+                                    <span class="span" id="bg3">Jquery</span>
+                                    </a>    
+                                   </div>
+                                </div>
+                                <div class="nav">
+                                   <div class="a">
+                                    <a href="#">
+                                    <span class="span" id="bg4">Javascript</span>
+                                    </a>
+                                   </div>
+                                </div>
+                                
+                                <div class="nav">
+                                   <div class="a">
+                                    <a href="#">
+                                    <span class="span" id="bg6">关于我</span>
+                                    </a>
+                                    </div>
+                                </div>
+                                </div>
+                        
+                        </div>
+                    </div>
+                        <!-- <div class="box7">
+                            我们都在改变，从简单到复杂，从单纯到圆滑;
+                            我们都想不变;<br>一直的善良着，永远的耿直着。
+                        </div> -->
+                    <!-- 左 -->
+                    <div class="col-md-6">               
+                            <div class="row wzw-w">
+                                <div class="col-md-12 wenzhang-w">
+                                    <div class="wz-w">
+                                        <div class="wz-w-biaoti">
+                                            <div style="text-align: center;font-size: 30px;color: rgb(80, 77, 77);"><p>css3属性</p></div>
+                                            <ul class="dev-1-w" style="text-align: center;">
+                                                <li class="dev-2">
+                                                    <i class="iconfont"><a href=""><img src="/public/images/time.png" alt=""></a></i> 
+                                                    <span>2019/12/26</span>
+                                                </li> 
+                                                <li class="dev-2">
+                                                    <i class="iconfont"><a href=""><img src="/public/images/eye.png" alt=""></a></i> 
+                                                    <span>61</span>
+                                                </li> 
+    
+                                                <li class="dev-3">
+                                                    <i class="iconfont"><a href=""><img src="/public/images/book.png" alt=""></a></i> 
+                                                    <span>阅读量：4</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="wenzhang-w-w">
+                                            <!-- <div style="position: absolute;height: 400px;width: 500px;float: left;"> -->
+                                                <img src="/public/images/tupian2.jpg" alt="" style="float: left;margin: 10px;border-radius: 50%;">
+                                            
+                                            <!-- </div>   -->
+                                            
+                                           
+                                            <p>1、Left：0
+pxposition：fixed固定定位
+overflow：hidden隐藏滚动
+overflow：auto滚动</p>
+
+<p>2、text-align内容居中</p>
+
+<p>3、line-height行高，调节间距<!--more--></p>
+
+<p>4、粘连布局</p>
+
+<p>5、线性渐变（Linear Gradients）- 向下/向上/向左/向右/对角方向
+•	径向渐变（Radial Gradients）- 由它们的中心定义</p>
+
+<p>6、backgrount：-webkit-linear-gradient（top，red，green）从红色渐变到绿色（没效果两种可能：语法错误、第二个是浏览器原因，需要添加一个浏览器前缀说明）</p>
+
+<p>7、backgrount：-webkit-linear-gradient（top，red 50%，green）红色渐变要占50%，top（渐变从什么地方开始）</p>
+
+<p>8、border：rudius（圆角边框）</p>
+
+<p>9、镜像渐变，从圆心开始渐变，center、center。</p>
+
+<p>10、css3过渡：CSS3中，我们为了添加某种效果可以从一种样式转变到另一个的时候，无需使用Flash动画或JavaScript。用鼠标移过下面的元素：只能对具体数值的属性起作用
+div { transition: width 2s; 宽度过渡，可以给他一个过程满满过渡
+-webkit-transition: width 2s; /* Safari */ }</p>
+
+<p>11、多属性过渡可以单独写，也可以全部写（transition：all liner延迟时间）</p>
+
+<p>12、平移：transform：translate；</p>
+
+<p>13、旋转transform：rotate；</p>
+
+<p>14、横向缩放：transform：scaleX</p>
+
+<p>15、图片放大：transform：scale
+  Overflow：hidden</p>
+
+<p>16、backgroud-color：cover</p>
+
+<p>17、text-align：center居中</p>
+
+<p>18、设定旋转的原点：transform—origion：left top左上角</p>
+
+<p>19、transform：skewX（30）斜切扭曲可以加上旋转特效</p>
+
+<p>20、建立3D空间：transform-style:preserve-3d
+设置景深：perspective：600px（看的远近不同）
+看的地点不同， Perspective-region：left top</p>
+
+<p>21、帧动画:</p>
+
+ 
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </div>
+                            
+                            
+
+
+
+                    </div>
+                    
+                    <div class="col-md-3">
+                        
+                        <div class="xin">
+                            
+                                <div class="xinxi">
+                                <div class="touxiang1">
+                                    <div class="touxiang"></div>
+                                </div>
+                                <div class="xinxi1"><p>悠然-个人博客</p></div> 
+                                <div class="xinxi2"><p>不断努力的编程小白</p></div> 
+                                <div class="xinxi1">
+                                    
+                                    <div>
+                                        <div class="feed" id="feed1">
+                                            
+                                            <p><a href="http://www.htmleaf.com/"></a></p>
+                                            <div class="heart" id="like3" rel="like"></div>
+                                            <div class="likeCount" id="likeCount3">23</div>
+                                        </div> 
+                                        <div class="guanzhu" style="cursor: pointer;">
+                                            关注
+                                            <div class="yintu">
+                                                <img id="ti" src="/public/images/1577370220.png" style="display:none">
+                                            </div>
+                                        </div>
+                                        <div><img src="/public/images/gaunzhu.gif" alt="" style="width: 90px;height: 90px;float: right;margin-top: -90px;"></div>
+                                        
+                                    </div>
+   
+                                </div>
+                                
+                                <div class="xinxi3"><p>文章数量：7</p></div> 
+                                <div class="xinxi3"><p>我关注的：2</p></div>
+                                <div class="xinxi31"><p>运行天数：<span id="htmer_time"></span></p></div> <!-- 文字 --> 
+                                <div class="row yema">
+                                    <div class="shangyiye" id="sy1">
+                                        
+                                        <a href="/others/2019/12/26/wen1.html"><strong>《《《上一篇</strong></a>
+                                        
+                                    </div>
+                                    
+                                    <div class="shangyiye" id="sy2">
+                                        
+                                        <a href="/html/2019/12/25/second.html"><strong>下一篇》》》</strong></a>
+                                        
+                                    </div>
+                                </div> 
+                            </div>   
+                        </div>    
+                    </div>
+                    <div class="col-md-1"></div><!-- 右 -->
+                </div>
+            </div>
+    </div>
+    <!-- 中间部分 -->
+ <div class="snow-container">    
+</div>
+<script>
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second >= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second >= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second >= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second >= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second > 0) {
+            time[4] = second;
+        }
+        return time;
+    }
+</script>
+<script type="text/javascript" language="javascript">
+    function setTime() {
+        // 博客创建时间秒数，时间格式中，月比较特殊，是从0开始的，所以想要显示5月，得写4才行，如下
+        var create_time = Math.round(new Date(Date.UTC(2019, 11, 22, 0, 0, 0))
+                .getTime() / 1000);
+        // 当前时间秒数,增加时区的差异
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
+                + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
+                + '秒';
+        document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+    }
+    setInterval(setTime, 1000);
+</script>
+
+
+
+<script>
+$('.guanzhu').mouseenter(function(){
+    $('#ti').show();
+})
+$('.guanzhu').mouseout(function(){
+    $('#ti').hide();
+})
+
+</script>
+<script type="text/javascript" src="/public/index.js"></script>
+<!-- <script src="inedx.js"></script> -->
+<script>
+    $(document).ready(function() {
+    $('body').on("click",'.heart',function(){
+        var A=$(this).attr("id");
+        var B=A.split("like");
+        var messageID=B[1];
+        var C=parseInt($("#likeCount"+messageID).html());
+        var D=$(this).attr("rel");//如果为Like则执行动画
+        if(D =='like')
+        {      
+                $("#likeCount"+messageID).html(C+1);
+                $(this).addClass("heartAnimation").attr("rel","unlike");
+            $(this).css("background-position","right");
+                    //不加这句有bug，动画最后又会到了起点，点击后强制使图片停在最右边，
+        }
+        else
+        {
+                $("#likeCount"+messageID).html(C-1);
+                $(this).removeClass("heartAnimation").attr("rel","like");
+                $(this).css("background-position","left");
+                   //点击后强制使红心变黑，否则显示悬停状态的红色的心
+        }
+    });
+    });
+    
+    </script>
+</body>
+</html>

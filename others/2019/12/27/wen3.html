@@ -1,0 +1,529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="/public/JS/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/public/JS/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/public/JS/jquery.min.js"></script>
+    <link rel="stylesheet" href="/public/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/public/index1.css">
+    <title>在读文章</title>
+
+    <!--  -->
+<!--  -->
+    <style>
+    .container-fluid{
+        margin: 0;
+        padding: 0;
+    }
+    
+    </style>
+    <style type="text/css">
+        body.custom-background {
+            background-image:url('/public/images/121 (2).jpg');
+            background-size:100% 100%;
+            background-repeat:no-repeat;
+            background-position:top left;
+            background-attachment:fixed;
+        }
+        </style>
+        <style>
+            /* 3、文章部分里面的每个div */    
+            .wenzhang-w{
+                width: 96%;
+                height: auto;
+                margin-left:4%;
+                margin-top: -10px;
+                padding: 0;
+                border-radius: 10px;
+                background: url(/public/images/touxiangbeijingtu.png) no-repeat;
+                 background-size: 100% 100%;
+                /* background-color:rgb(0, 10, 14); */
+                /* opacity: 0.5; */
+                /* box-shadow: 2px 2px 20px 1px rgb(247,232,142); */
+                /* margin: 5px; */
+                /* bottom: 5px; */
+                /* position: absolute; */  
+                /* border: 1px solid rgb(92, 164, 231); */
+            }
+            .dev-1-w{
+                /* background: rgb(195, 227, 248); */
+                border-radius: 10px;   
+            }
+            .dev-1-w li{
+                display: inline-block;
+                margin-left: 40px;
+            }
+            .dev-1-w li a{
+                /* background: rgb(17, 17, 17); */
+                border-radius: 50%;
+            }
+            .dev-1-w li span{
+                /* background: white; */
+               color: rgb(3, 3, 3);
+            }
+            .wenzhang-w-w{
+                width:100%;
+                height: auto;
+                text-indent: 2em;
+                margin-top: -50px;
+                /* text-align: center; */
+                line-height: 160%;
+                font-size: 15px;
+                color: rgb(15, 15, 15);
+                padding: 20px;
+                font-weight: 30px;
+                font-size: 20px;
+            }
+            .wz-w-biaoti{
+                background: url(/public/images/dongtu5.jpg) no-repeat;
+                background-size: 100% 100%;
+                height: 200px;
+            }
+            </style>
+                    <!-- 第二页 -->
+        <script type="text/javascript" src="/public/all.js"></script>
+</head>
+<body class="custom-background">
+   
+   
+    <!-- 导航条 -->
+    <div class="container-fluid">
+        <div class="row beijing"> <!--第一行 -->
+            <div class="col-md-4 col-xs-1 beijing1">
+                
+                <div class="h">
+                    <div>
+                        <p class="geqian">个性签名：</p>
+                    </div>
+                    
+                    <p class="geqian1">总之岁月漫长，然而值得等待~</p>
+                    
+                </div>
+            </div> <!-- 1-5格 -->
+            <div class="col-md-1 col-xs-1 beijing1">
+                <img src="/public/images/122.jpg" alt="" class="img1">
+            </div>
+            <div class="col-md-1 col-xs-1 beijing1">
+                <div class="bianqian1">
+                    <img src="/public/images/paipai.png" style="display:none" id="paipai">
+                    <a style="cursor: pointer;" href="/index.html">首页</a>
+                </div>
+            </div><!-- 2 -->
+
+            
+
+            <div class="col-md-1 col-xs-1 beijing1">
+                <div class="bianqian1"><a style="cursor: pointer;" href="/about.html">分类</a style="cursor: pointer;"></div>
+            </div><!-- 4 -->
+
+            <div class="col-md-1 col-xs-1 beijing1">
+                <div class="bianqian1"><a style="cursor: pointer;">留言</a style="cursor: pointer;"></div>
+            </div><!-- 5 -->
+            <div class="col-md-1 col-xs-1 beijing1">
+                <div class="bianqian1"><a style="cursor: pointer;">相册</a style="cursor: pointer;"></div>
+            </div><!-- 6 -->
+            <div class="col-md-1 col-xs-1 beijing1">
+                <div class="bianqian1"><a style="cursor: pointer;">友链</a style="cursor: pointer;"></div>
+            </div><!-- 3 -->
+            <div class="col-md-1 col-xs-1 beijing1"></div><!-- 7 -->
+            <div class="col-md-1 col-xs-1 beijing1"></div><!-- 8 -->
+        
+        </div>
+        <div class="row">
+            <div class="xiantiao"></div>
+        </div>     
+    <!-- 导航条 -->
+    <!-- 中间部分 -->
+            <div class="row"><!--第二行 -->
+                <div class="yincang">
+                    <div class="col-md-2">
+                        <div class="box-wrap">
+                            <div class="wenzi">tips</div>
+                            <div class="main">
+                                <div class="nav">
+                                   <div class="a">
+                                    <a href="#">
+                                    <span class="span" id="bg1">CSS</span>
+                                    </a>
+                                   </div>
+                                </div>
+                                <div class="nav">
+                                   <div class="a">
+                                    <a href="#">
+                                    <span class="span" id="bg2">HTML</span>
+                                    </a>
+                                   </div>
+                                </div>
+                                <div class="nav">
+                                   <div class="a">
+                                    <a href="#">
+                                    <span class="span" id="bg3">Jquery</span>
+                                    </a>    
+                                   </div>
+                                </div>
+                                <div class="nav">
+                                   <div class="a">
+                                    <a href="#">
+                                    <span class="span" id="bg4">Javascript</span>
+                                    </a>
+                                   </div>
+                                </div>
+                                
+                                <div class="nav">
+                                   <div class="a">
+                                    <a href="#">
+                                    <span class="span" id="bg6">关于我</span>
+                                    </a>
+                                    </div>
+                                </div>
+                                </div>
+                        
+                        </div>
+                    </div>
+                        <!-- <div class="box7">
+                            我们都在改变，从简单到复杂，从单纯到圆滑;
+                            我们都想不变;<br>一直的善良着，永远的耿直着。
+                        </div> -->
+                    <!-- 左 -->
+                    <div class="col-md-6">               
+                            <div class="row wzw-w">
+                                <div class="col-md-12 wenzhang-w">
+                                    <div class="wz-w">
+                                        <div class="wz-w-biaoti">
+                                            <div style="text-align: center;font-size: 30px;color: rgb(80, 77, 77);"><p>《致我们终将逝去的青春》电影台词show</p></div>
+                                            <ul class="dev-1-w" style="text-align: center;">
+                                                <li class="dev-2">
+                                                    <i class="iconfont"><a href=""><img src="/public/images/time.png" alt=""></a></i> 
+                                                    <span>2019/12/27</span>
+                                                </li> 
+                                                <li class="dev-2">
+                                                    <i class="iconfont"><a href=""><img src="/public/images/eye.png" alt=""></a></i> 
+                                                    <span>61</span>
+                                                </li> 
+    
+                                                <li class="dev-3">
+                                                    <i class="iconfont"><a href=""><img src="/public/images/book.png" alt=""></a></i> 
+                                                    <span>阅读量：4</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="wenzhang-w-w">
+                                            <!-- <div style="position: absolute;height: 400px;width: 500px;float: left;"> -->
+                                                <img src="/public/images/tupian5.jpg" alt="" style="float: left;margin: 10px;border-radius: 50%;">
+                                            
+                                            <!-- </div>   -->
+                                            
+                                           
+                                            <p>1、很多人，一旦错过了就是陌路。真希望爱上一个人就可以一辈子这么爱下去，就这么简单，多好。你答应我，别让我再等你，我怕我没有足够的勇气一直等在原地，更怕我们走着走着，就在也找不到对方。<!--more--></p>
+
+<p>2.在这个世界上，没有人真正可以对另一个人的伤痛感同身受。你万箭穿心，你痛不欲生，也仅仅是你一个人的事，别人也许会同情，也许会嗟叹，但永远不会清楚你伤口究竟溃烂到何种境地。
+所以，无谓把血痂撕开让人参观。那为什么你不哭？
+因为掉眼泪也不能让我找回它。<br />
+　　
+3.一个人要是伤害了另一个他爱的人,绝对比被伤害那个更痛。<br />
+　　
+4.月光再亮，终究冰凉。<br />
+　
+　
+5、曾经我们都以为自己可以为爱情死，其实爱情死不了人，它只会在最疼的地方扎上一针，然后我们欲哭无泪，我们辗转反侧，我们久病成医，我们百炼成钢。你不是风儿，我也不是沙，再缠绵也到不了天涯，擦干了泪，明天早上，我们都要上班。<br />
+　
+　
+6.别让我再等你，我怕我没有足够的勇气一直等在原地，更怕我们走着走着，就再也找不到对方了。<br /></p>
+
+<p>7.我不可能一次又一次相信你，不可能。这世上没有谁会永远等谁，更没有谁会永远相信谁．．．曾看到一句话，相信你，就象相信我自己，可是当自己都不相信自己的时候呢．．．．．．<br /></p>
+
+<p>8.少年意气的时候我觉得有很多东西比感情更重要，后来才发现我们能记住的偏偏只是一些小的幸福。<br />
+　　
+9.人和人之间的隔阂永远比默契更坚固。<br />
+　
+　
+10.也许那句老话说得对，对于女人来说，爱情是生活的全部，但对于男人来说，那只是他的生活的一小部分，不管当初他给过怎样的承诺，在面临选择的时候，他们永远比女人现实而理性。在男人的世界里，女人其实只是一片点缀的白云，他偶尔会赞叹它的无暇和美好，也会对它留恋，但决不会为了它而放弃浩瀚的天空。当然，还有更聪明一些的男人，可以踏着云彩叠成的阶梯一步登天，又或者在风雨来临之前，希望在云下得有片刻安身之地。<img src="/public/images/psb (2).jpg" /><br />
+　
+　
+11.在爱情里付出的心血和收获的幸福从来不成正比，越想去爱的人就越得不到爱。<br />
+　
+　
+12.他即使有千般不好，万般辜负，毕竟是我爱过的人。郑微垂下头去沉默，如果她不明白，也不会觉得凄凉。爱情是足以焚身的烈火，不管是聪明人还是笨蛋，爱上了，都成了飞蛾。谁都知道飞过去会成为飞灰，但那又怎么样，百年之后，不管燃烧过与否，我们都将成为尘土。<br /></p>
+
+<p>13.郑微哭了，她不知道眼泪是因为疼痛，还是因为意识到这一夜自己不可避免的蜕变。如果大多数女人一生中迟早会有这样一天，那么，她不得不承认，自己的泪水中还有喜悦，因为她最完整无缺的一切，在她最美丽的时候，最美好的年华里交付给她最爱的男孩，想到这个的时候，悸动代替了微弱的挣扎，连疼痛也是变得意味深长。上帝是智慧的，他让女孩的第一次在男人的入侵下感到不可抑制的疼痛，因为快乐是转瞬即逝的，唯有疼痛可以铭记于心，她可以忘记一个给予了她最强烈快乐的男人，却永远忘不了最初的那个人给她的疼。<br />
+　
+　
+14.时间真是一副霸道的良药。得不到才会念想，送上门去他未必真的会要。功名利禄在手，就偶尔额搓叹往昔，有些人，要的也仅仅是念想而已。<br />
+　
+　
+15.再好的过去，回忆的次数多了味道也就淡了。<br />
+　
+　
+16.注定要失去的东西，失去了，也不过是早死早超生。<br /></p>
+
+<p>17.看得见的伤口，迟早有一天会痊愈的。<br /></p>
+
+<p>18.女的碰到甚么样的的男的都不要紧，就怕遇到了传说中的洋葱王子，你想要看到他的心，只有一层一层地剥掉他的外衣，在这个过程中他不断地让你流泪，最后才知道，原来洋葱根本就没有心。<br /></p>
+
+<p>19.也许这才是成年人得感情，放在天平上小心计量，你给我几分，我还你多少。我们可以付出的东西是那么有限，再也
+经不起虚掷和挥霍。而年少时不及代价去爱的我们又到哪里去了？<br />
+　
+　
+20.人世间的感情为什么不能像打地基一样，挖一个坑，就立一个桩，所有的坑都有它的那根桩，所有的桩也能找到它的那个坑，没有失望，没有失败，没有遗恨，永不落空。。。。<br />
+　
+　
+21.她来过，她爱过，她努力过，得之是幸，不得是命。当然，年少时的我们如何会相信会有得不到的宿命。<br />
+　
+22.当年舟车劳顿只为与爱人片刻相依的她，一心只想把那份感情守成天长地久的她，可曾想到会有今天？爱着的时候，以为那个人就是自己的一生，谁料到一朝梦醒，就站在了另一个人的身边。<br /></p>
+
+<p>23.任敌千变万化，我自岿然不动<br />
+　
+24.郑微想，她毕竟比阿正幸福，不管是过去还是现在。因为她爱的时候没有保留，流泪的时候淋漓尽致，在这份感情里，她没有亏欠，她的爱是圆满的。正因为陈孝正给过玉面小飞龙跌宕起伏的爱，才让后来的郑微学会在平凡的幸福里甘之如饴。<br />
+　　</p>
+
+<p>25.原谅她不能给他安慰，每个人最终都能自己舔着自己的伤口。<img src="/public/images/psb (1).jpg" /><br />
+　
+　
+26.我们一生里有可能遇到很多人，有时正好同路，就会在一起走一段，直到我们遇到了真正想要共度一生的那个人，才会把余下的旅途全部交给交给这个人，结伴一起到终点。<br /></p>
+
+<p>27.万物守恒, 所以一个聪明人一般都搭配一个傻子<br />
+　　
+28.郑微挠了挠头，想起他摇晃了一下的背影，嘿嘿地笑了，转而又认真地对阮阮说，我这么急也是有道理的，我要是不说，他怎么会知道我喜欢上了他，他什么都不知道，我一个人想得肝肠寸断地多冤呐，怎么也得给他内心斗争一番，说不定他想着想着就走火入魔，也喜欢上我了。再不济，就算没有立刻喜欢上，他以后看我的心态肯定也不一样的，从前他看我，就是看一个普通的人，以后他再看我，就是看一个跟他有感情纠葛地人，多暧昧呀，这对于他这么个青春少男来说，绝对是有强大的心里冲击力的。再说了，我听黎维娟说，他身边是有;准女友的，我估计他们两个也郎情妾意好一段时间了，不过都在玩矜持罢了，这种情况下我更不能等了，先下手为强，后下手遭殃，撑死胆大的，饿死胆小的，小说里不都这么写吗，越是这种纯洁朦胧的情愫就越脆弱，经不起一点风吹雨打，我要以我强有力的介入，将这段感情扼杀在萌芽阶段，打得他们从此天各一方，今生无望！;<br />
+　
+　
+29.　郑微想起了那个故事，出轨的男人死前把房子和遗产留给了妻儿，却把最爱的一片树叶赠给了他爱的女人。爱情的分量，也不过是一枚落叶和死后的尘灰。<br />
+　
+　
+30.陈孝正艰难地反驳，;妈，你跟爸爸感情那么好，你应该知道有些人一辈子只能遇到一个。<br />
+　　
+31.为别人的故事流自己的眼泪。<br />
+　
+32.连他自己都不相信自己可以拥有,所以注定得不到。<br />
+　
+　
+33.跟一个陌生的男人就这么过一辈子，我会认命。但如果那个人是你，我不甘心！<br />
+　
+　
+34.是我的，就是我的，走了的，只能说明他从来就没有属于过我。<br /></p>
+
+<p>35.总有一天 会在他的心中插上我的五星红旗 !<br /></p>
+
+<p>36.醉笑陪公三万场，不用诉离觞。<br />
+　
+　
+37.这个男人的语调永远是温和而矜持的，陈孝正不会忘记，当自己在某个午夜，看着这个男人怀抱着猫一步步走下她家的楼梯,然后笑着说：听说陈助理地任命就要下来了，贵公司欧阳总经理对你厚望有加，你是聪明人，这个时候，为谁风露立中宵？那个时候,陈孝正就知道自己手上已经没有了筹码。<br />
+　
+　
+38.她重重地叹了口气，她觉得自己跟他在一起应该有半辈子那么长了，原来不过是十三个月，她现在觉得，青春有什么用，她恨不得一夜之间跟他一同白头，顷刻就白发苍苍，到那时尘埃落定，一切都有了结局，便才是真正的天长地久，再也没有未知的未来和变故，再也没有任何人，任何事可以把他们分开。<br />
+　
+　
+39.眼泪无谓而徒劳的液体,流泪的人是愚蠢而可悲的<br />
+　
+　
+40.我吃了什么亏？谁拿枪逼着我了，别跟我唧唧歪歪的说吃亏，没谁逼良为娼，这事就图个你情我愿。我愿意傻，他愿意走，谁也不欠谁的，即使他走了，我那几年的快乐也不可能喂了狗。<br />
+　　</p>
+
+<p>41.但是，现在的她也知道，身在其外的人，又怎么能懂得别人的感情世界？<br />
+　
+　
+42.对于自己的工作，郑微的总结便是以下内容：出差：领导未行我先行，看看道路平不平；吃饭：领导未尝我先尝，看看饭菜香不香；开会：领导未讲我先讲，看看话筒响不响。<br />
+　
+　
+43.很久以后，当有人称赞已是资深员工的郑秘书为人精明谨慎，讲话做事滴水不漏，郑微都在心里苦笑着感激李阿姨，感激那些给她上过一堂又一堂课的凉薄的人们，其实并不是这个世界变得丑陋，世界原本如此，不过是她往日太过痴傻，等她终于一觉醒来，心怀孤勇，不顾一切的小飞龙已消失在身后。<br />
+　
+　
+44.这些年，我缝缝补补这段感情，始终不愿意离开他，那是因为我珍惜我青春的时候最初最好的感情，现在才发现，这段感情从来就不是我想像中的样子。<br />
+　
+　
+45.郑微一再地拒接，他一再地打来，时间长了，慢慢地电话也少了，终于归于沉寂，就像我们的一颗心，曾经火热地揣在胸膛里，滚烫得无处安放，急不可待地找人分享这温度，从没想过它也有一天会冷却，冷到我们只得自己环紧自己，小心翼翼，唯恐连这仅有的暖意也守不住 。<br />
+　
+　
+46.她如何能不爱，感情不是水闸，说开就开，说关就关。那场感情，她豁出了自己，一丝也余力也没有留下。而他是在她最快乐的时候骤然离开，中途没有争吵，没有冷战，没有给过她机会缓冲，让热情消散，如同一首歌，唱到了最酣畅处，嘎然而止。<br />
+　
+　
+47.他已经走得太远，而她不可能永远等在原地，也许他们真的就再也找不回对方，这些他早已知道，他只是后悔回头，就像登山者沿着一个注定地方向往上爬，途中多多苦都在意料之中，但是唯独不应该回头望，因为回头的那一瞬，他才惊觉自己身在悬崖。<br />
+　
+　
+48.于是他的沉默便有了绝望而自弃的味道。<br />
+　
+　
+49.痛苦只为无处言说。<br />
+　　
+50.少年人的爱恋,也许爱情的方式是错的 ,然而爱情的直觉永远是对的<br />
+　
+51.为什么我们总要到过了半生，总要等退无可退，才知道我们曾经亲手舍弃的东西，在后来的日子里再也遇不到了。那声声喘息也渐渐微弱，林静抬起脸，恰恰迎上林介州的视线，身前生后声名都可以抛却，连躯壳都可以抛却，只为回到最初的地方，这值得吗？如果这不值得，那什么又是值得？<br />
+52.法律的存在有什么意义？她居然不能把这种男人判为死刑。我们希望负心的人不得好死，可是他偏偏活得好好的，短暂的伤痛过后，他还是会结婚生子，顺利老去。
+　<br />
+　
+53.幸福就是求仁得仁。<br />
+　
+　
+54.月亮只有一夕如环，夕夕长如玦，何况是人？那就一辈子吧，大多数女人都没有嫁给最刻骨铭心的那一个，她得到了林静，并非不爱，何须伤感？
+　<br />
+　
+55.青春是有限的,不能在犹豫和观望中度过<br />
+　　
+56.爱情是足以焚身的烈火，不管是聪明人还是笨蛋，爱上了，都成了飞蛾。谁都知道飞过去会成为飞灰，但那又怎么样，百年之后，不管燃烧过与否，我们都将成为尘土。<br />
+　　
+57.在时间和现实的夹缝里，青春和美丽一样，脆弱如风干的纸<br />
+　
+　
+58.喜悦出于巧合,眼泪何必固执.<br />
+　
+　
+59.见鬼去吧,什么终将逝去的青春,我赌一次永恒!<br />
+　
+　
+60.郑微在这一刻忽然感到释然，她彻底原谅了这个给过她辜负的男人，也原谅了自己年少时不问因由的爱。她曾经把最好的青春都灌溉在这个男人身上，用尽了笑和泪，让爱萌芽，虽然最终也没开出一朵花，可是这又有什么关系，即使没有陈孝正，郑微的青春也不会永垂不朽。正如故乡是用来怀念的，青春就是用来追忆的，当你怀揣着它时，它一文不值，只有将它耗尽后，再回过头看，一切才有了意义――爱过我们的人和伤害过我们的人，都是我们青春存在的意义。。。。。</p>
+ 
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </div>
+                            
+                            
+
+
+
+                    </div>
+                    
+                    <div class="col-md-3">
+                        
+                        <div class="xin">
+                            
+                                <div class="xinxi">
+                                <div class="touxiang1">
+                                    <div class="touxiang"></div>
+                                </div>
+                                <div class="xinxi1"><p>悠然-个人博客</p></div> 
+                                <div class="xinxi2"><p>不断努力的编程小白</p></div> 
+                                <div class="xinxi1">
+                                    
+                                    <div>
+                                        <div class="feed" id="feed1">
+                                            
+                                            <p><a href="http://www.htmleaf.com/"></a></p>
+                                            <div class="heart" id="like3" rel="like"></div>
+                                            <div class="likeCount" id="likeCount3">23</div>
+                                        </div> 
+                                        <div class="guanzhu" style="cursor: pointer;">
+                                            关注
+                                            <div class="yintu">
+                                                <img id="ti" src="/public/images/1577370220.png" style="display:none">
+                                            </div>
+                                        </div>
+                                        <div><img src="/public/images/gaunzhu.gif" alt="" style="width: 90px;height: 90px;float: right;margin-top: -90px;"></div>
+                                        
+                                    </div>
+   
+                                </div>
+                                
+                                <div class="xinxi3"><p>文章数量：7</p></div> 
+                                <div class="xinxi3"><p>我关注的：2</p></div>
+                                <div class="xinxi31"><p>运行天数：<span id="htmer_time"></span></p></div> <!-- 文字 --> 
+                                <div class="row yema">
+                                    <div class="shangyiye" id="sy1">
+                                        
+                                        <a href="/hadoop/2019/12/27/wen4.html"><strong>《《《上一篇</strong></a>
+                                        
+                                    </div>
+                                    
+                                    <div class="shangyiye" id="sy2">
+                                        
+                                        <a href="/2019/12/27/wen2.html"><strong>下一篇》》》</strong></a>
+                                        
+                                    </div>
+                                </div> 
+                            </div>   
+                        </div>    
+                    </div>
+                    <div class="col-md-1"></div><!-- 右 -->
+                </div>
+            </div>
+    </div>
+    <!-- 中间部分 -->
+ <div class="snow-container">    
+</div>
+<script>
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second >= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second >= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second >= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second >= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second > 0) {
+            time[4] = second;
+        }
+        return time;
+    }
+</script>
+<script type="text/javascript" language="javascript">
+    function setTime() {
+        // 博客创建时间秒数，时间格式中，月比较特殊，是从0开始的，所以想要显示5月，得写4才行，如下
+        var create_time = Math.round(new Date(Date.UTC(2019, 11, 22, 0, 0, 0))
+                .getTime() / 1000);
+        // 当前时间秒数,增加时区的差异
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
+                + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
+                + '秒';
+        document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+    }
+    setInterval(setTime, 1000);
+</script>
+
+
+
+<script>
+$('.guanzhu').mouseenter(function(){
+    $('#ti').show();
+})
+$('.guanzhu').mouseout(function(){
+    $('#ti').hide();
+})
+
+</script>
+<script type="text/javascript" src="/public/index.js"></script>
+<!-- <script src="inedx.js"></script> -->
+<script>
+    $(document).ready(function() {
+    $('body').on("click",'.heart',function(){
+        var A=$(this).attr("id");
+        var B=A.split("like");
+        var messageID=B[1];
+        var C=parseInt($("#likeCount"+messageID).html());
+        var D=$(this).attr("rel");//如果为Like则执行动画
+        if(D =='like')
+        {      
+                $("#likeCount"+messageID).html(C+1);
+                $(this).addClass("heartAnimation").attr("rel","unlike");
+            $(this).css("background-position","right");
+                    //不加这句有bug，动画最后又会到了起点，点击后强制使图片停在最右边，
+        }
+        else
+        {
+                $("#likeCount"+messageID).html(C-1);
+                $(this).removeClass("heartAnimation").attr("rel","like");
+                $(this).css("background-position","left");
+                   //点击后强制使红心变黑，否则显示悬停状态的红色的心
+        }
+    });
+    });
+    
+    </script>
+</body>
+</html>
