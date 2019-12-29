@@ -92,7 +92,7 @@
     <!-- 导航条 -->
     <div class="container-fluid">
         <div class="row beijing"> <!--第一行 -->
-            <div class="col-md-4 col-xs-1 beijing1">
+            <div class="col-md-4 col-xs-1 beijing11">
                 
                 <div class="h">
                     <div>
@@ -103,8 +103,8 @@
                     
                 </div>
             </div> <!-- 1-5格 -->
-            <div class="col-md-1 col-xs-1 beijing1">
-                <img src="/public/images/122.jpg" alt="" class="img1">
+            <div class="col-md-1 col-xs-1 beijing11">
+                <!-- <img src="/public/images/122.jpg" alt="" class="img1"> -->
             </div>
             <div class="col-md-1 col-xs-1 beijing1">
                 <div class="bianqian1">
@@ -140,8 +140,11 @@
             <div class="row"><!--第二行 -->
                 <div class="yincang">
                     <div class="col-md-2">
+                        <div class="wenzi" style="margin-left: -15px;">
+                            <img src="/public/images/jiayouzhan.png" alt="">
+                            加油站</div>
                         <div class="box-wrap">
-                            <div class="wenzi">tips</div>
+                            <!-- <div class="wenzi">tips</div> -->
                             <div class="main">
                                 <div class="nav">
                                    <div class="a">
@@ -212,7 +215,7 @@
                                         </div>
                                         <div class="wenzhang-w-w">
                                             <!-- <div style="position: absolute;height: 400px;width: 500px;float: left;"> -->
-                                                <img src="/public/images/luoye.jpg" alt="" style="float: left;margin: 10px;border-radius: 50%;">
+                                                <img src="/public/images/tupain6.jpg" alt="" style="float: left;margin: 10px;border-radius: 50%;">
                                             
                                             <!-- </div>   -->
                                             
@@ -232,7 +235,32 @@
 
 <p>7、函数的动态参数;:arguments获取当前函数的所有参数</p>
 
- 
+
+                                            <div class="liuyan">
+                                                <div class="comments">
+                        
+                                                    <div class="comment-wrap">
+                                                        <div class="photo">
+                                                            <div class="avatar" style="background-image: url('/assets/coolboy.jpg')"></div>
+                                                        </div>
+                                                        <div class="comment-block">
+                                                            <form action="">
+                                                                <textarea name="" id="" cols="30" rows="3" placeholder="Say somthing..."></textarea>
+                                                                <div style="width: 100px;height: 40px;box-shadow: 1px solid black;margin-left: 50px;border-radius: 10px;display: inline-block;cursor: pointer;text-align: center;line-height:40px;">
+                                                                    <p><img src="/public/images/pinglun.png" alt="" style="width:20px;height:20px">留言</p>
+                                                                
+                                                                </div>
+                                                                <div style="width: 100px;height: 40px;box-shadow: 1px solid black;margin-left: 50px;border-radius: 10px;display: inline-block;cursor: pointer;text-align: center;">
+                                                                    <p><img src="/public/images/tijiao.png" alt="" style="width:20px;height:20px">提交</p>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                
+                                                    
+                                                </div>
+                                            </div>
+                         
                                         </div>
                                     </div>
                                 </div>                            
@@ -332,7 +360,7 @@
 <script type="text/javascript" language="javascript">
     function setTime() {
         // 博客创建时间秒数，时间格式中，月比较特殊，是从0开始的，所以想要显示5月，得写4才行，如下
-        var create_time = Math.round(new Date(Date.UTC(2019, 11, 22, 0, 0, 0))
+        var create_time = Math.round(new Date(Date.UTC(2019, 11, 28, 0, 0, 0))
                 .getTime() / 1000);
         // 当前时间秒数,增加时区的差异
         var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
