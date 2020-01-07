@@ -391,6 +391,22 @@
     border: 2px solid  rgb(118,173,210);
     box-shadow: 2px 2px 10px 1px rgb(202, 210, 236);
 }
+.shangyiye1{
+    text-align: center; 
+    font-size: 17px;
+    line-height: 200%;
+}
+.shangyiye1 a{
+    text-decoration: none;
+}
+/* #sy12{
+    float: left;
+    margin-left: 160px;
+} */
+/* #sy22{
+    float: left;
+    margin-left: 20px;
+    } */
 #sy1{
     float: left;
     margin-left: 160px;

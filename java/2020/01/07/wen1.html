@@ -9,7 +9,7 @@
     <script type="text/javascript" src="/public/JS/jquery.min.js"></script>
     <link rel="stylesheet" href="/public/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/public/index1.css">
-    <title>文章分类</title>
+    <title>在读文章</title>
 
     <!--  -->
 <!--  -->
@@ -34,14 +34,19 @@
             .wenzhang-w{
                 width: 96%;
                 height: auto;
-                /* height: 800px; */
                 margin-left:4%;
                 margin-top: -10px;
                 padding: 0;
                 border-radius: 10px;
-                background:url(/public/images/touxiangbeijingtu.png)no-repeat;
-                background-size: 100% 100%;
-            
+                background: url(/public/images/touxiangbeijingtu.png) no-repeat;
+                 background-size: 100% 100%;
+                /* background-color:rgb(0, 10, 14); */
+                /* opacity: 0.5; */
+                /* box-shadow: 2px 2px 20px 1px rgb(247,232,142); */
+                /* margin: 5px; */
+                /* bottom: 5px; */
+                /* position: absolute; */  
+                /* border: 1px solid rgb(92, 164, 231); */
             }
             .dev-1-w{
                 /* background: rgb(195, 227, 248); */
@@ -52,23 +57,30 @@
                 margin-left: 40px;
             }
             .dev-1-w li a{
-                background: rgb(12, 12, 12);
+                /* background: rgb(17, 17, 17); */
                 border-radius: 50%;
             }
             .dev-1-w li span{
                 /* background: white; */
-               color: rgb(8, 8, 8);
+               color: rgb(3, 3, 3);
             }
             .wenzhang-w-w{
                 width:100%;
                 height: auto;
                 text-indent: 2em;
+                margin-top: -50px;
                 /* text-align: center; */
                 line-height: 160%;
                 font-size: 15px;
-                margin-top: -50px;
-                color: rgb(10, 10, 10);
+                color: rgb(15, 15, 15);
                 padding: 20px;
+                font-weight: 30px;
+                font-size: 20px;
+            }
+            .wz-w-biaoti{
+                background: url(/public/images/dongtu5.jpg) no-repeat;
+                background-size: 100% 100%;
+                height: 200px;
             }
             </style>
                     <!-- 第二页 -->
@@ -92,27 +104,30 @@
                 </div>
             </div> <!-- 1-5格 -->
             <div class="col-md-1 col-xs-1 beijing11">
-                <img src="" alt="" class="img1">
+                <!-- <img src="/public/images/122.jpg" alt="" class="img1"> -->
             </div>
             <div class="col-md-1 col-xs-1 beijing1">
-                <div class="bianqian1"><a style="cursor: pointer;" href="/index.html">首页</a></div>
+                <div class="bianqian1">
+                    <img src="/public/images/paipai.png" style="display:none" id="paipai">
+                    <a style="cursor: pointer;" href="/index.html">首页</a>
+                </div>
             </div><!-- 2 -->
 
-            <!-- 3 -->
+            
 
             <div class="col-md-1 col-xs-1 beijing1">
-                <div class="bianqian1"><a style="cursor: pointer;">分类</a style="cursor: pointer;"></div>
+                <div class="bianqian1"><a style="cursor: pointer;" href="/about.html">分类</a style="cursor: pointer;"></div>
             </div><!-- 4 -->
 
             <div class="col-md-1 col-xs-1 beijing1">
                 <div class="bianqian1"><a style="cursor: pointer;">留言</a style="cursor: pointer;"></div>
             </div><!-- 5 -->
             <div class="col-md-1 col-xs-1 beijing1">
-                <div class="bianqian1"><a style="cursor: pointer;">友链</a style="cursor: pointer;"></div>
+                <div class="bianqian1"><a style="cursor: pointer;">相册</a style="cursor: pointer;"></div>
             </div><!-- 6 -->
             <div class="col-md-1 col-xs-1 beijing1">
-                <div class="bianqian1"><a style="cursor: pointer;">相册</a style="cursor: pointer;"></div>
-            </div>
+                <div class="bianqian1"><a style="cursor: pointer;">友链</a style="cursor: pointer;"></div>
+            </div><!-- 3 -->
             <div class="col-md-1 col-xs-1 beijing1"></div><!-- 7 -->
             <div class="col-md-1 col-xs-1 beijing1"></div><!-- 8 -->
         
@@ -129,32 +144,32 @@
                             <img src="/public/images/jiayouzhan.png" alt="">
                             加油站</div>
                         <div class="box-wrap">
-                            
+                            <!-- <div class="wenzi">tips</div> -->
                             <div class="main">
                                 <div class="nav">
                                    <div class="a">
-                                    <a href="https://www.w3cschool.cn/css/dict">
+                                    <a href="#">
                                     <span class="span" id="bg1">CSS</span>
                                     </a>
                                    </div>
                                 </div>
                                 <div class="nav">
                                    <div class="a">
-                                    <a href="http://www.mobiletrain.org">
+                                    <a href="#">
                                     <span class="span" id="bg2">HTML</span>
                                     </a>
                                    </div>
                                 </div>
                                 <div class="nav">
                                    <div class="a">
-                                    <a href="http://jquery.cuishifeng.cn">
+                                    <a href="#">
                                     <span class="span" id="bg3">Jquery</span>
                                     </a>    
                                    </div>
                                 </div>
                                 <div class="nav">
                                    <div class="a">
-                                    <a href="https://www.javascript.com">
+                                    <a href="#">
                                     <span class="span" id="bg4">Javascript</span>
                                     </a>
                                    </div>
@@ -178,89 +193,115 @@
                     <!-- 左 -->
                     <div class="col-md-6">               
                             <div class="row wzw-w">
-                                <div class="col-md-12 wenzhang-w" id="wenzhang">
+                                <div class="col-md-12 wenzhang-w">
                                     <div class="wz-w">
                                         <div class="wz-w-biaoti">
-                                            <div style="text-align: center;font-size: 30px;color: rgb(12, 12, 12);">
-                                                
-                                                <p><img src="/public/images/dongtu6.gif" alt="" style="width: 70px;height: 70px;"><img src="/public/images/fenlei.png" alt="" style="border-radius: 50%;">文章分类</p>
-                                            </div>
+                                            <div style="text-align: center;font-size: 30px;color: rgb(80, 77, 77);"><p>Java中print、printf、println的使用</p></div>
                                             <ul class="dev-1-w" style="text-align: center;">
-                                               <div class="fenlei" style="font-size: large;color: rgb(81, 104, 240);"><p>文章数量：8篇</p></div> 
+                                                <li class="dev-2">
+                                                    <i class="iconfont"><a href=""><img src="/public/images/time.png" alt=""></a></i> 
+                                                    <span>2020/01/07</span>
+                                                </li> 
+                                                <li class="dev-2">
+                                                    <i class="iconfont"><a href=""><img src="/public/images/eye.png" alt=""></a></i> 
+                                                    <span>61</span>
+                                                </li> 
+    
+                                                <li class="dev-3">
+                                                    <i class="iconfont"><a href=""><img src="/public/images/book.png" alt=""></a></i> 
+                                                    <span>阅读量：4</span>
+                                                </li>
                                             </ul>
                                         </div>
                                         <div class="wenzhang-w-w">
-
+                                            <!-- <div style="position: absolute;height: 400px;width: 500px;float: left;"> -->
+                                                <img src="/public/images/a33.jpg" alt="" style="float: left;margin: 10px;border-radius: 50%;">
                                             
-<h1><img src="/public/images/dongtu7.gif" style="width: 40px;height: 40px;" />html</h1>
-<h4><img src="/public/images/shuliang.png" />文章数量：3</h4>
-<ul class="arc-list" style="font-size:20px;">
-          
-    <li>2019/12/26
-    <a href="/html/2019/12/26/wen.html">
-    css3属性
-    </a>
-   </li>    
-           
-    <li>2019/12/25
-    <a href="/html/2019/12/25/second.html">
-    css学习
-    </a>
-   </li>    
-           
-    <li>2017/12/23
-    <a href="/html/2017/12/23/wen5.html">
-    js学习笔记
-    </a>
-   </li>    
-    
-  </ul>
-<h1><img src="/public/images/dongtu7.gif" style="width: 40px;height: 40px;" />others</h1>
-<h4><img src="/public/images/shuliang.png" />文章数量：2</h4>
-<ul class="arc-list" style="font-size:20px;">
-          
-    <li>2019/12/27
-    <a href="/others/2019/12/27/wen3.html">
-    《致我们终将逝去的青春》电影台词show
-    </a>
-   </li>    
-           
-    <li>2019/12/26
-    <a href="/others/2019/12/26/wen1.html">
-    转身，微笑走进又一年
-    </a>
-   </li>    
-    
-  </ul>
-<h1><img src="/public/images/dongtu7.gif" style="width: 40px;height: 40px;" />Hadoop</h1>
-<h4><img src="/public/images/shuliang.png" />文章数量：1</h4>
-<ul class="arc-list" style="font-size:20px;">
-          
-    <li>2019/12/27
-    <a href="/hadoop/2019/12/27/wen4.html">
-    hadoop学习总结
-    </a>
-   </li>    
-    
-  </ul>
-<h1><img src="/public/images/dongtu7.gif" style="width: 40px;height: 40px;" />java</h1>
-<h4><img src="/public/images/shuliang.png" />文章数量：1</h4>
-<ul class="arc-list" style="font-size:20px;">
-          
-    <li>2020/01/07
-    <a href="/java/2020/01/07/wen1.html">
-    Java中print、printf、println的使用
-    </a>
-   </li>    
-    
-  </ul>
+                                            <!-- </div>   -->
+                                            
+                                           
+                                            <p>说说输出那些事：<!--more--></p>
+<h2>System.out.pirntln()；的输出格式。</h2>
+<p>比如最常见的 hello world<br />
+<img src="/public/images/println.jpg" alt="" />
+输出结果<br />
+<img src="/public/images/println1.jpg" alt="" /><br />
+即println在JAVA中具有换行输出的功能</p>
 
-                                            <img src="" alt="">
+<h2>使用System.out.pirnt();的输出格式。</h2>
+
+<p><img src="/public/images/print.jpg" alt="" /><br /></p>
+
+<p>输出结果<br /></p>
+
+<p><img src="/public/images/print1.jpg" alt="" /><br />
+所以说print在JAVA中只是一般输出</p>
+
+<h2>使用System.out.pirntf();的输出格式。</h2>
+
+<p><img src="/public/images/printf.jpg" alt="" /><br /></p>
+
+<p>输出结果<br /></p>
+
+<p><img src="/public/images/printf1.jpg" alt="" /><br /></p>
+
+<p>printf常常使用于格式转化</p>
+
+<p>总结：</p>
+
+<p>1.print为一般输出，同样不能保留精度格式转化，也不能换行输出</p>
+
+<p>2.printf常用于格式转换，但需要注意不是换行输出，只用于精度转换</p>
+
+<p>3.println为换行输出，不能用于格式转换</p>
+
+                                            <div class="row yema">
+                                                <div class="shangyiye1" id="sy12">
+                                                    
+                                                    <a href="javascript:void(0)" disabled><strong></strong></a>
+                                                    
+                                                </div>
+                                                
+                                                <div class="shangyiye1" id="sy22">
+                                                    
+                                                    <a href="/hadoop/2019/12/27/wen4.html"><strong>hadoop学习总结<img src="/public/images/R-changjiantou.png" alt=""></strong></a>
+                                                    
+                                                </div>
+                                            </div> 
+                                            <div class="liuyan">
+                                                <div class="comments">
+                        
+                                                    <div class="comment-wrap">
+                                                        <div class="photo">
+                                                            <div class="avatar" style="background-image: url('/assets/coolboy.jpg')"></div>
+                                                        </div>
+                                                        <div class="comment-block">
+                                                            <form action="">
+                                                                <textarea name="" id="" cols="30" rows="3" placeholder="Say somthing..."></textarea>
+                                                                <div style="width: 100px;height: 40px;box-shadow: 1px solid black;margin-left: 50px;border-radius: 10px;display: inline-block;cursor: pointer;text-align: center;line-height:40px;">
+                                                                    <p><img src="/public/images/pinglun.png" alt="" style="width:20px;height:20px">留言</p>
+                                                                
+                                                                </div>
+                                                                <div style="width: 100px;height: 40px;box-shadow: 1px solid black;margin-left: 50px;border-radius: 10px;display: inline-block;cursor: pointer;text-align: center;">
+                                                                    <p><img src="/public/images/tijiao.png" alt="" style="width:20px;height:20px">提交</p>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                
+                                                    
+                                                </div>
+                                            </div>
+                         
                                         </div>
                                     </div>
                                 </div>                            
                             </div>
                             
+                            
+
+
+
                     </div>
                     
                     <div class="col-md-3">
@@ -289,6 +330,7 @@
                                             </div>
                                         </div>
                                         <div><img src="/public/images/gaunzhu.gif" alt="" style="width: 90px;height: 90px;float: right;margin-top: -90px;"></div>
+                                        
                                     </div>
    
                                 </div>
@@ -296,6 +338,7 @@
                                 <div class="xinxi3"><p>文章数量：8</p></div> 
                                 <div class="xinxi3"><p>我关注的：2</p></div>
                                 <div class="xinxi31"><p>运行天数：<span id="htmer_time"></span></p></div> <!-- 文字 --> 
+                                
                             </div>   
                         </div>    
                     </div>
@@ -306,39 +349,6 @@
     <!-- 中间部分 -->
  <div class="snow-container">    
 </div>
-
-<!--1、 背景切换 -->
-<script>
-var curIndex = 0;
-//时间间隔(单位毫秒)，每秒钟显示一张，数组共有3张图片放在img文件夹下。
-var timeInterval = 4000;  
-//定义一个存放照片位置的数组，可以放任意个，在这里放3个
-var arr = new Array();
-arr[0] = "/public/images/fen-1.jpg";
-arr[1] = "/public/images/fen-2.jpg";
-arr[2] = "/public/images/fen-3.jpg";
-//////////////////////////////////
-
-var obj = document.getElementById("wenzhang");
-var time1=setInterval(changeImg, timeInterval);
-// setInterval(changeImg, timeInterval);
-function changeImg() {   //获得id名为d1的对象
-    
-if (curIndex == arr.length - 1) 
-{
-curIndex = 0;
-} 
-else {
-curIndex += 1;
-}
- //设置wenzhang的背景图片
- obj.style.backgroundImage= "url("+arr[curIndex]+")";
-
-}
-</script>
-
-<!--1、 背景切换 -->
-
 <script>
     function secondToDate(second) {
         if (!second) {
@@ -367,7 +377,6 @@ curIndex += 1;
         return time;
     }
 </script>
-<!--2、时间设计 -->
 <script type="text/javascript" language="javascript">
     function setTime() {
         // 博客创建时间秒数，时间格式中，月比较特殊，是从0开始的，所以想要显示5月，得写4才行，如下
@@ -397,7 +406,6 @@ $('.guanzhu').mouseout(function(){
 </script>
 <script type="text/javascript" src="/public/index.js"></script>
 <!-- <script src="inedx.js"></script> -->
-<!--3、 红心 -->
 <script>
     $(document).ready(function() {
     $('body').on("click",'.heart',function(){
@@ -424,6 +432,5 @@ $('.guanzhu').mouseout(function(){
     });
     
     </script>
-  
 </body>
 </html>
